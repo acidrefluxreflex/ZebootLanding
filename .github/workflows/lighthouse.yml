@@ -1,0 +1,20 @@
+name: Lighthouse
+
+on:
+    push:
+      branches: [ "main" ]
+    pull_request:
+      # The branches below must be a subset of the branches above
+      branches: [ "main" ]
+    schedule:
+      - cron: '24 23 * * 2'
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Lighthouse
+      uses: foo-software/lighthouse-check-action@master
+      with:
+        urls: 'https://pure-landing-iota.vercel.app/'
