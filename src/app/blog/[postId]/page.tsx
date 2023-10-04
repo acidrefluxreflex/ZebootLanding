@@ -141,7 +141,7 @@ export default async function StaticDetailPage({
           <h2 className="mb-2 text-gray-600">{createdAt}</h2>
           <h1 className="mb-4 text-5xl font-bold">{post.title}</h1>
 
-          <p className="badge mb-12">
+          <p className="badge badge-accent text-white mb-12">
             <Link
               href="/blog/category/[categoryId]"
               as={`/blog/category/${post.category?.id ?? ""}`}

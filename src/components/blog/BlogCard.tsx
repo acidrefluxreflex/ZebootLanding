@@ -37,7 +37,7 @@ const BlogPost: React.FC<{ post: Blog }> = ({ post }) => {
 
         <div className=" text-gray-600">
           {post.category ? (
-            <p className="badge">
+            <p className="badge badge-accent text-white">
               <Link
                 href="/blog/category/[categoryId]"
                 as={`/blog/category/${post.category?.id ?? ""}`}
