@@ -1,6 +1,33 @@
 import { getList } from "../../libs/microcms";
 
 import BlogPost from "@/components/blog/BlogCard";
+import { Metadata } from "next";
+
+export async function generateMetadata() {
+  // read route params
+
+  // fetch data
+
+  return {
+    title: "Zeboot Blog",
+    description: "Block Sexual Content on the Web",
+    openGraph: {
+      title: "Zeboot",
+      description: "Block Sexual Content on the Web",
+      url: "https://eveki.net/blog/",
+      siteName: "zeboot.net",
+      images: [
+        {
+          url: "https://zeboot.net/_next/image?url=%2Fimages%2FforTwitter.webp",
+          width: 1200,
+          height: 600,
+        },
+      ],
+      locale: "ja_JP",
+      type: "website",
+    },
+  };
+}
 
 export default async function StaticPage() {
   const { contents } = await getList();

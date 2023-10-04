@@ -46,12 +46,12 @@ export async function generateMetadata({
       title: post.title,
       description: post.description,
       url: "https://eveki.net/blog/" + post.id,
-      siteName: "eveki.net",
+      siteName: "zeboot.net",
       images: [
         {
           url:
             post.eyecatch?.url ||
-            "https://eveki.net/_next/image?url=%2Fimages%2FforTwitter.webp",
+            "https://zeboot.net/_next/image?url=%2Fimages%2FforTwitter.webp",
           width: 1200,
           height: 600,
         },

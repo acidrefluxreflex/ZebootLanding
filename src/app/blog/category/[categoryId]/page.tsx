@@ -1,11 +1,7 @@
-import {
-  getCategory,
-  getListForCategory,
-  getCategoryDetail,
-  getList,
-} from "@/libs/microcms";
+import { getCategory, getCategoryDetail, getList } from "@/libs/microcms";
 import Pagination from "@/components/shared/Pagination";
 import BlogPost from "@/components/blog/BlogCard";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
   const { contents } = await getCategory();
@@ -17,6 +13,32 @@ export async function generateStaticParams() {
   });
 
   return paths;
+}
+
+export async function generateMetadata({
+  params: { categoryId },
+}: {
+  params: { categoryId: string };
+}): Promise<Metadata> {
+  return {
+    title: "Zeboot Blog | " + categoryId,
+    description: categoryId,
+    openGraph: {
+      title: "Zeboot Blog | " + categoryId,
+      description: categoryId,
+      url: "https://zeboot.net/blog/" + categoryId,
+      siteName: "zeboot.net",
+      images: [
+        {
+          url: "https://zeboot.net/_next/image?url=%2Fimages%2FforTwitter.webp",
+          width: 1200,
+          height: 600,
+        },
+      ],
+      locale: "ja_JP",
+      type: "website",
+    },
+  };
 }
 
 export default async function StaticPage({
