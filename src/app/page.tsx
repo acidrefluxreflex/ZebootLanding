@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  verification: {
+    yandex: "7623133352eec7c6",
+  },
 };
 
 export default function Home() {

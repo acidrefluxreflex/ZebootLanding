@@ -1,4 +1,4 @@
-import { getList } from "../../libs/microcms";
+import { getList } from "@/libs/microcms";
 
 import BlogPost from "@/components/blog/BlogCard";
 import { Metadata } from "next";
@@ -40,7 +40,7 @@ export default async function StaticPage() {
 
   return (
     <div className="max-w-2xl bg-white min-h-screen">
-      <div className="max-w-2xl pl-8">
+      <div className="max-w-2xl md:pl-8 pl-0 flex flex-col justify-center ">
         {contents.map((post) => {
           return (
             <div key={post.id} className="">

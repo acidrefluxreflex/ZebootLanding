@@ -149,7 +149,6 @@ export default async function StaticDetailPage({
               {post.category?.name ?? ""}
             </Link>
           </p>
-
           <div className={proseSetting}>{parse(post.content)}</div>
         </div>
       </article>

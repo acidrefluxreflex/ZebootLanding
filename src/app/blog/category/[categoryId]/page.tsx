@@ -59,8 +59,8 @@ export default async function StaticPage({
   }
 
   return (
-    <div className="max-w-2xl ">
-      <ul className="list-disc pl-8">
+    <div className="max-w-2xl">
+      <ul className="list-disc md:pl-8 pl-0">
         {filtered.map((post) => {
           return (
             <div key={post.id} className="">

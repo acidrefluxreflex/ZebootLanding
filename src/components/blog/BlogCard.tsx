@@ -12,7 +12,7 @@ const BlogPost: React.FC<{ post: Blog }> = ({ post }) => {
   const createdAt = dayjs(post.createdAt).format("YYYY-MM-DD");
 
   return (
-    <div className="max-w-2xl flex flex-col overflow-hidden bg-white  py-11  sm:flex-row">
+    <div className="max-w-2xl flex flex-col overflow-hidden bg-white  py-11  sm:flex-row items-center">
       <div id="IMAGE">
         {post.eyecatch ? (
           <Link href={`/blog/${post.id}`}>
@@ -29,7 +29,7 @@ const BlogPost: React.FC<{ post: Blog }> = ({ post }) => {
       </div>
       <div
         id="TEXT"
-        className="  min-h-[120px] flex flex-col content-between justify-between px-6 sm:w-2/3"
+        className="min-h-[120px] flex flex-col content-between justify-between px-6 sm:w-2/3"
       >
         <Link href={`/blog/${post.id}`} className="mb-2 text-2xl font-bold">
           {post.title}

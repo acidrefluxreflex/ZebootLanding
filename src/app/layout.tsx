@@ -10,7 +10,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  
   const GTM_KEY = process.env.GTM_KEY;
 
   return (
