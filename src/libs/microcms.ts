@@ -41,6 +41,23 @@ export const getList = async (queries?: MicroCMSQueries) => {
     queries,
   });
 
+  
+
+  // データの取得が目視しやすいよう明示的に遅延効果を追加
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+
+  return listData;
+};
+
+// ブログ一覧を取得
+export const getLimitedList = async (limit: number) => {
+  const listData = await client.getList<Blog>({
+    endpoint: "blogs",
+    queries: {
+      limit: limit,
+    }
+  });
+
   // データの取得が目視しやすいよう明示的に遅延効果を追加
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
