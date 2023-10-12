@@ -83,6 +83,16 @@ export default async function StaticDetailPage({
     notFound();
   }
 
+  function convertToISO8601(dateString: string): string {
+    // 入力された文字列からDateオブジェクトを作成
+    const inputDate = new Date(dateString);
+  
+    // ISO 8601形式の文字列に変換
+    const iso8601String = inputDate.toISOString();
+  
+    return iso8601String;
+  }
+
   function addProductJsonLd() {
     return {
       __html: `  
@@ -91,9 +101,9 @@ export default async function StaticDetailPage({
         "@type": "NewsArticle",
         "headline": "${post.title}",
         "image": [
-          "${post.eyecatch?.url}",
+          "${post.eyecatch?.url}"
          ],
-        "datePublished": "${createdAt}",
+        "datePublished": "${convertToISO8601(createdAt)}",
         "author": [
           {
             "@type": "Person",
