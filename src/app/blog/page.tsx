@@ -14,7 +14,7 @@ export async function generateMetadata() {
     openGraph: {
       title: "Zeboot",
       description: "Block Sexual Content on the Web",
-      url: "https://eveki.net/blog/",
+      url: "https://zeboot.net/blog/",
       siteName: "zeboot.net",
       images: [
         {
