@@ -107,7 +107,7 @@ export default async function StaticDetailPage({
   }
 
   return (
-    <html lang="en">
+    <>
       <head>
         <script
           type="application/ld+json"
@@ -187,6 +187,6 @@ export default async function StaticDetailPage({
           </div>
         </article>
       </main>
-    </html>
+    </>
   );
 }
