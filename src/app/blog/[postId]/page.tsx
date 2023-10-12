@@ -59,6 +59,9 @@ export async function generateMetadata({
       locale: "ja_JP",
       type: "website",
     },
+    verification: {
+      yandex: "7623133352eec7c6",
+    },
   };
 }
 
@@ -78,6 +81,29 @@ export default async function StaticDetailPage({
 
   if (!post) {
     notFound();
+  }
+
+  function addProductJsonLd() {
+    return {
+      __html: `  
+      {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "${post.title}",
+        "image": [
+          "${post.eyecatch?.url}",
+         ],
+        "datePublished": "${createdAt}",
+        "author": [
+          {
+            "@type": "Person",
+            "name": "Kabuki",
+            "url": "i-kabuki.com"
+          }
+      ]
+      }
+  `,
+    };
   }
 
   return (
