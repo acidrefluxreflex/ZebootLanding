@@ -51,7 +51,7 @@ export default function ContactSection() {
         </div>
         <p>
           <button type="submit" className="btn-accent btn text-lg">
-            内容を送信
+            Send Message
           </button>
         </p>
       </form>

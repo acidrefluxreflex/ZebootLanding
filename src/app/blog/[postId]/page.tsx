@@ -86,10 +86,10 @@ export default async function StaticDetailPage({
   function convertToISO8601(dateString: string): string {
     // 入力された文字列からDateオブジェクトを作成
     const inputDate = new Date(dateString);
-  
+
     // ISO 8601形式の文字列に変換
     const iso8601String = inputDate.toISOString();
-  
+
     return iso8601String;
   }
 

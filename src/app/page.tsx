@@ -7,6 +7,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import TestimonialSection from "@/components/sections/TestimonialSection";
 import OverviewSection from "@/components/sections/OverviewSection";
 import GetStartSection from "@/components/sections/GetStartSection";
+import BlogSection from "@/components/sections/BlogSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function Home() {
         <FeatureSection />
         <StrengthsSection />
         <GetStartSection />
+
         <ContactSection />
       </div>
     </main>

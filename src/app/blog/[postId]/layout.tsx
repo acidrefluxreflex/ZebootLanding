@@ -1,7 +1,6 @@
 import { getList } from "@/libs/microcms";
 import RecommendArticles from "@/components/blog/RecomendArticles";
 
-
 export async function generateStaticParams() {
   const { contents } = await getList();
 
@@ -19,7 +18,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (<div>{children}
-  <RecommendArticles />
-  </div>);
+  return (
+    <div>
+      {children}
+      <RecommendArticles />
+    </div>
+  );
 }
