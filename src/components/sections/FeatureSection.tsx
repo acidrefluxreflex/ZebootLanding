@@ -66,7 +66,7 @@ function renderCard(
         />
       </figure>
       <div className="card-body">
-        <h1 className="card-title text-4xl font-bold pb-9">{title}</h1>
+        <h2 className="card-title text-4xl font-bold pb-9">{title}</h2>
         <p className="max-w-[600px]">{bodyWithLineBreaks}</p>
         <div className="card-actions justify-end"></div>
       </div>

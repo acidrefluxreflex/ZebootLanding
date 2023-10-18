@@ -2,7 +2,7 @@ import React from "react";
 export default function ContactSection() {
   return (
     <div className="mx-auto md:w-3/5 ">
-      <h1 className="my-2 text-2xl font-bold">Contact</h1>
+      <h2 className="my-2 text-2xl font-bold">Contact</h2>
       <form
         name="contact"
         method="POST"

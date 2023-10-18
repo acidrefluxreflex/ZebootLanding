@@ -6,12 +6,12 @@ export default function OverviewSection() {
     <div className="">
       <div className="lg:flex flex-col md:flex-row md:items-center md:justify-between md:h-screen">
         <div className="md:w-1/3 lg:w-1/2 m-5">
-          <h1
+          <h2
             className="text-4xl font-bold mb-4"
             style={{ fontFamily: "Futura" }}
           >
             Peace and Wellbeing
-          </h1>
+          </h2>
           <p className="lg:text-lg text-sm text-gray-600">
             At Zeboot, we&apos;re on a mission to create a digital world
             that&apos;s safe and enjoyable for everyone.

@@ -29,7 +29,7 @@ export default function HeroSection() {
                 online?
                 <br />
                 <br />
-                Look no further! SafeGuard is your go-to solution for filtering
+                Look no further! Zeboot is your go-to solution for filtering
                 out explicit content and ensuring a safer online experience.
               </p>
               <button className="btn btn-info text-[#1C1C1C] my-5 ">

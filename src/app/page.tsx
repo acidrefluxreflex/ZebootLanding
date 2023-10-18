@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "Zeboot",
   description: "Block Sexual Content on the Web",
   openGraph: {
-    title: "Zeboot",
+    title: "Zeboot:Zen Sexual Content Blocker",
     description: "Block Sexual Content on the Web",
     url: "https://zeboot.net",
     siteName: "zeboot.net",
