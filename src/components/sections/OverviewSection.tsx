@@ -47,12 +47,12 @@ export default function OverviewSection() {
           />
         </div>
         <div className="md:w-1/3 lg:w-1/2 m-5">
-          <h1
+          <h2
             className="text-4xl font-bold mb-4"
             style={{ fontFamily: "Futura" }}
           >
             Zen + Reboot = Zeboot
-          </h1>
+          </h2>
           <p className="lg:text-lg text-sm text-gray-600">
             Zeboot is a Japanese application that incorporates Zen concepts. The
             system, learned from reliable texts, offers you new habits.

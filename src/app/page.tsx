@@ -11,7 +11,7 @@ import BlogSection from "@/components/sections/BlogSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export const metadata: Metadata = {
-  title: "Zeboot",
+  title: "Zeboot:Zen Sexual Content Blocker",
   description: "Block Sexual Content on the Web",
   openGraph: {
     title: "Zeboot:Zen Sexual Content Blocker",
@@ -44,7 +44,7 @@ export default function Home() {
         <FeatureSection />
         <StrengthsSection />
         <GetStartSection />
-
+<BlogSection />
         <ContactSection />
       </div>
     </main>

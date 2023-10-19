@@ -1,9 +1,25 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 const Navbar: React.FC = () => {
+  const [isTop, setIsTop] = useState(true);
+
+  const scrolledClasses =
+    "border-solid bg-[#1C1C1C] bg-opacity-80 drop-shadow-2xl backdrop-blur-lg backdrop-filter";
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsTop(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div
-      className={`fixed top-0 z-40 max-w-full border-solid bg-[#1C1C1C] bg-opacity-80 drop-shadow-2xl backdrop-blur-lg backdrop-filter text-[white]  navbar items-center transition-all duration-500 ease-in-out`}
+      className={`fixed top-0 z-40 max-w-full text-[white]  navbar items-center transition-all duration-500 ease-in-out
+      ${isTop ? "bg-transparent" : scrolledClasses} 
+      `}
     >
       <div className="m-0 flex-1 px-1 pt-1">
         <div style={{ fontFamily: "Futura" }}>
@@ -12,7 +28,13 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
       </div>
-
+      <div className="flex-none">
+        <nav className="menu menu-horizontal px-4 font-medium">
+          <Link href="/blog" className={"text-lg"}>
+            Blog
+          </Link>
+        </nav>
+      </div>
       {/*
       <div className="flex-none">
         <nav className="menu menu-horizontal px-1 font-medium">

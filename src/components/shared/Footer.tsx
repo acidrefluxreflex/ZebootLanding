@@ -1,8 +1,9 @@
 import Link from "next/link";
-
+import ParticleAnimation from "@/libs/ParticleAnimation";
 export default function Footer() {
   return (
     <div>
+
       <footer className="footer p-10 bg-base-200 text-base-content">
         <nav>
           <header className="footer-title">Blog</header>
@@ -18,13 +19,13 @@ export default function Footer() {
             Zen
           </Link>
         </nav>
-        {/* <nav>
-          <header className="footer-title">Company</header>
-          <a className="link link-hover">About us</a>
-          <a className="link link-hover">Contact</a>
-          <a className="link link-hover">Jobs</a>
-          <a className="link link-hover">Press kit</a>
+        <nav>
+          <header className="footer-title">Products</header>
+          <a href="https://eveki.net" className="link link-hover">Zeboot</a>
+          <a href="https://textcheckai.page.link/toapp" className="link link-hover">Eveki</a>
+        
         </nav>
+        {/* 
         <nav>
           <header className="footer-title">Legal</header>
           <a className="link link-hover">Terms of use</a>
