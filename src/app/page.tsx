@@ -39,12 +39,11 @@ function addProductJsonLd() {
       "@context": "http://schema.org",
       "@type": "SoftwareApplication",
       "name": "Zeboot:Zen Sexual Content Blocker",
-      "image": "https://eveki.net/_next/image?url=%2Fimages%2FroundedIcon.png&w=640&q=75",
-      "url": "https://eveki.net/",
-      "applicationCategory": "EntertainmentApplication",
-      "downloadUrl": "https://textcheckai.page.link/toapp",
+      "image": "https://zeboot.net/_next/image?url=%2Fimages%2Flanding%2FappIcon.webp&w=96&q=75",
+      "url": "https://zeboot.net/",
+      "applicationCategory": "HealthApplication",
+      "downloadUrl": "https://apps.apple.com/us/app/zeboot/id6447095547?itsct=apps_box_link&itscg=30200",
       "operatingSystem": "iOS",
-      "screenshot": "https://eveki.net/_next/image?url=%2Fimages%2FchatImage.png&w=1920&q=75"
     }
 `,
   };
