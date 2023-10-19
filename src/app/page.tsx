@@ -39,10 +39,10 @@ const jsonLd: WithContext<SoftwareApplication> = {
     "https://apps.apple.com/us/app/zeboot/id6447095547?itsct=apps_box_link&itscg=30200",
   operatingSystem: "iOS",
 
-offers: {
-  "@type": "Offer",
-  "price": "0"
-}
+  offers: {
+    "@type": "Offer",
+    price: "0",
+  },
 };
 
 export const metadata: Metadata = {
@@ -50,7 +50,8 @@ export const metadata: Metadata = {
   description: "Block Sexual Content on the Web",
   openGraph: {
     title: "Zeboot:Zen Sexual Content Blocker",
-    description: "Block Sexual Content on the Web",
+    description:
+      "Discover an app inspired by Zen philosophy, designed to block sexual content on the web. Experience a safer, more serene internet browsing.",
     url: "https://zeboot.net",
     siteName: "zeboot.net",
     images: [
@@ -71,22 +72,22 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-    <script
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white ">
-      <HeroSection />
-      <div className="lg:max-w-7xl md:max-w-3xl mx-auto px-4 sm:px-6 md:px-8">
-        <OverviewSection />
-        <FAQSection />
-        <TestimonialSection />
-        <FeatureSection />
-        <StrengthsSection />
-        <GetStartSection />
-        <ContactSection />
-      </div>
-    </main>
+      <main className="flex min-h-screen flex-col items-center justify-between bg-white ">
+        <HeroSection />
+        <div className="lg:max-w-7xl md:max-w-3xl mx-auto px-4 sm:px-6 md:px-8">
+          <OverviewSection />
+          <FAQSection />
+          <TestimonialSection />
+          <FeatureSection />
+          <StrengthsSection />
+          <GetStartSection />
+          <ContactSection />
+        </div>
+      </main>
     </>
   );
 }
