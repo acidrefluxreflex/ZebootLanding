@@ -33,6 +33,23 @@ export const metadata: Metadata = {
   },
 };
 
+function addProductJsonLd() {
+  return {
+    __html: `{
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Zeboot:Zen Sexual Content Blocker",
+      "image": "https://eveki.net/_next/image?url=%2Fimages%2FroundedIcon.png&w=640&q=75",
+      "url": "https://eveki.net/",
+      "applicationCategory": "EntertainmentApplication",
+      "downloadUrl": "https://textcheckai.page.link/toapp",
+      "operatingSystem": "iOS",
+      "screenshot": "https://eveki.net/_next/image?url=%2Fimages%2FchatImage.png&w=1920&q=75"
+    }
+`,
+  };
+}
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-white ">

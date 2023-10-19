@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 const Navbar: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
@@ -23,8 +24,14 @@ const Navbar: React.FC = () => {
     >
       <div className="m-0 flex-1 px-1 pt-1">
         <div style={{ fontFamily: "Futura" }}>
-          <Link href="/" className="ml-3 lg:text-3xl text-xl font-medium ">
-            Zeboot
+          <Link href="/" className="ml-3 lg:text-3xl text-xl font-medium flex space-x-3 items-center justify-center">
+            <Image
+              src="/images/landing/appIcon.webp"
+              width={40}
+              height={40}
+              alt="Zeboot Logo"
+            />
+           <h2>Zeboot</h2> 
           </Link>
         </div>
       </div>
