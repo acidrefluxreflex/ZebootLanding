@@ -44,7 +44,6 @@ export default function Home() {
         <FeatureSection />
         <StrengthsSection />
         <GetStartSection />
-<BlogSection />
         <ContactSection />
       </div>
     </main>

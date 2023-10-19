@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   const [isTop, setIsTop] = useState(true);
 
   const scrolledClasses =
-    "border-solid bg-[#1C1C1C] bg-opacity-80 drop-shadow-2xl backdrop-blur-lg backdrop-filter";
+    "border-solid bg-[#181D16] bg-opacity-80 drop-shadow-2xl backdrop-blur-lg backdrop-filter";
   useEffect(() => {
     const handleScroll = () => {
       setIsTop(window.scrollY === 0);
@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   return (
     <div
       className={`fixed top-0 z-40 max-w-full text-[white]  navbar items-center transition-all duration-500 ease-in-out
-      ${isTop ? "bg-transparent" : scrolledClasses} 
+      ${isTop ? scrolledClasses : scrolledClasses} 
       `}
     >
       <div className="m-0 flex-1 px-1 pt-1">

@@ -29,11 +29,13 @@ export default function HeroSection() {
                 online?
                 <br />
                 <br />
-                Look no further! Zeboot is your go-to solution for filtering
-                out explicit content and ensuring a safer online experience.
+                Look no further! Zeboot is your go-to solution for filtering out
+                explicit content and ensuring a safer online experience.
               </p>
               <button className="btn btn-info text-[#1C1C1C] my-5 ">
-                <a href="https://textcheckai.page.link/toapp">{btnText}</a>
+                <a href="https://apps.apple.com/us/app/zeboot/id6447095547?itsct=apps_box_link&itscg=30200">
+                  {btnText}
+                </a>
               </button>
             </div>
           </div>
