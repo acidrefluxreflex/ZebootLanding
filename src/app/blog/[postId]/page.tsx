@@ -62,6 +62,9 @@ export async function generateMetadata({
     verification: {
       yandex: "7623133352eec7c6",
     },
+    alternates: {
+      canonical: `https://zeboot.net/blog/${postId}`,
+    },
   };
 }
 

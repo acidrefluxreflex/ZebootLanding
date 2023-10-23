@@ -38,6 +38,9 @@ export async function generateMetadata({
       locale: "ja_JP",
       type: "website",
     },
+    alternates: {
+      canonical: `https://zeboot.net/blog/${categoryId}`,
+    },
   };
 }
 

@@ -1,7 +1,7 @@
 import { getList } from "@/libs/microcms";
 
 import BlogPost from "@/components/blog/BlogCard";
-import { Metadata } from "next";
+
 
 export async function generateMetadata() {
   // read route params
@@ -25,6 +25,9 @@ export async function generateMetadata() {
       ],
       locale: "ja_JP",
       type: "website",
+    },
+    alternates: {
+      canonical: `https://zeboot.net/blog/`,
     },
   };
 }
